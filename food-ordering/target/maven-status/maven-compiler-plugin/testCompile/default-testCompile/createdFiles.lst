@@ -1,0 +1,3 @@
+com\foodorder\strategy\StrategyTest.class
+com\foodorder\service\OrderServiceTest.class
+com\foodorder\service\RestaurantServiceTest.class
