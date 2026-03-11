@@ -8,10 +8,6 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-/**
- * Registry that holds all pluggable selection strategies.
- * New strategies are automatically picked up via Spring DI — no code change needed here.
- */
 @Component
 public class StrategyRegistry {
 

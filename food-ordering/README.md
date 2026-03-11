@@ -4,7 +4,7 @@
 
 ```
 com.foodorder
-├── domain/                  ← Pure domain objects (no Spring deps)
+├── domain/                  ← Pure domain objects
 │   ├── Restaurant.java      ← Owns capacity management + menu
 │   ├── Order.java           ← Owns state-machine transitions
 │   ├── MenuItem.java
@@ -12,12 +12,6 @@ com.foodorder
 ├── enums/
 │   ├── OrderStatus.java     ← PLACED → ACCEPTED → COMPLETED | REJECTED
 │   └── SelectionStrategy.java
-├── exception/               ← Typed domain exceptions
-│   ├── RestaurantNotFoundException
-│   ├── OrderNotFoundException
-│   ├── DuplicateRestaurantException
-│   ├── InvalidOrderStateException
-│   └── OrderNotAssignableException
 ├── repository/              ← In-memory ConcurrentHashMap stores
 │   ├── RestaurantRepository.java
 │   └── OrderRepository.java

@@ -105,8 +105,6 @@ public class FoodOrderingApplication implements CommandLineRunner {
         // ── Summary ───────────────────────────────────────────────────────────
         log.info("\n═══════════════════════════════════════════════");
         log.info("  DEMO COMPLETE — API available at http://localhost:8080");
-        log.info("  Swagger/Postman: see README for endpoints");
-        log.info("═══════════════════════════════════════════════\n");
     }
 
     private Order placeOrderSafe(String customer, Map<String, Integer> items,
