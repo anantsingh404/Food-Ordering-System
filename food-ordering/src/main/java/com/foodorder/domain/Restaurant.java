@@ -7,12 +7,6 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
-
-/**
- * Core domain entity representing a Restaurant.
- * Thread-safe via AtomicInteger for active order tracking.
- * Menu items can be added/updated but NOT deleted (per business rules).
- */
 @Getter
 public class Restaurant {
 
